@@ -5,6 +5,7 @@ This project is designed to recognize text in images using modern AI tools and w
 
 Install markmap VS-Code Extension to Preview.
 
+![design](https://github.com/user-attachments/assets/a286ddb1-bfc3-459e-a277-e83fe0204e98)
 
 
 ## Setup Instructions
