@@ -23,6 +23,12 @@ dependencies:
       - markmap-cli
 ```
 
+To install conda:
+  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+  - bash Miniconda3-latest-Linux-x86_64.sh
+  - add path to bashrc. eg: PATH=$PATH:$HOME/.local/bin:$HOME/bin:~/miniconda3/bin
+  - conda --version
+  
 Then, create the environment:
 ```bash
 conda env create -f env.yml
