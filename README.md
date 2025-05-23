@@ -32,6 +32,8 @@ To install conda:
 Then, create the environment:
 ```bash
 conda env create -f env.yml
+conda init --all --verbose
+
 conda activate ai-102
 ```
 
