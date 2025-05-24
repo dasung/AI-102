@@ -16,9 +16,11 @@
 #### Other Resource
    - AI agent
    - Chat Bots
-### Project (Example1)
-#### Model Catelog
-   - gpt-4o-mini
+### Project-3 (==To use model need a project==)
+#### Model Catelog 
+   - GPT-4o-mini
+   - O3
+   - GPT-4
 #### Overview
 ##### API Key
 ##### Endpoints
@@ -49,4 +51,9 @@
  -  Endpoint
   #### Access Control
   - Role Assignments 
+### Key Vault Resource
+ -  Keys
+ -  Secrets
+ -  Certificate
+
 

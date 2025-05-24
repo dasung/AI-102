@@ -37,6 +37,17 @@ conda init --all --verbose
 conda activate ai-102
 ```
 
+update existing env
+```bash
+conda env update --name ai-102 --file env.yml --prune
+```
+
+to remove env
+```bash
+conda env remove --name ai-102
+```
+
+
 ### 2. Install npm Dependencies
 If your project uses npm packages, run:
 ```bash
