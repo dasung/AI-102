@@ -1,11 +1,10 @@
 # AI-102 Project
 
 ## Overview
-This project is designed to recognize text in images using modern AI tools and workflows. It leverages Conda and npm for environment and package management, and utilizes markmap-cli for visualizing markdown files.
+This project contains my own shortnotes, created for Microsfot AI Enginner Associate Certification - AI-102.
 
-Install markmap VS-Code Extension to Preview.
 
-![design](https://github.com/user-attachments/assets/a286ddb1-bfc3-459e-a277-e83fe0204e98)
+![design](https://github.com/user-attachments/assets/d1af0f84-9fe0-407c-98e3-df07b3ba3e7e)
 
 
 ## Setup Instructions
