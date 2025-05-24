@@ -2,10 +2,11 @@ import os
 
 # Add references
 from dotenv import load_dotenv
-from azure.identity import DefaultAzureCredential
 from azure.ai.projects import AIProjectClient
 from azure.ai.inference.models import SystemMessage, UserMessage, AssistantMessage
+from azure.keyvault.secrets import SecretClient
 from azure.identity import ClientSecretCredential
+from azure.core.credentials import AzureKeyCredential
 
 def main(): 
 
@@ -19,16 +20,26 @@ def main():
         project_connection = os.getenv("PROJECT_ENDPOINT")
         model_deployment =  os.getenv("MODEL_DEPLOYMENT")
 
-        credential = ClientSecretCredential(
-                tenant_id="40b9bc57-e3eb-4d3b-80db-ad123ac9a09a",
-                client_id="0adab6d4-b8fb-4c6b-a6aa-119a4b4079f3",
-                client_secret="Ooh8Q~6j~v0GjSCSzYAFpOstnlkAC1QJfXfb5b0Q",
-                )
+        key_vault_name = os.getenv('KEY_VAULT')
+        app_tenant = os.getenv('TENANT_ID')
+        app_id = os.getenv('APP_ID')
+        app_password = os.getenv('APP_PASSWORD')
+
+        # Get Azure AI services key from keyvault using the service principal credentials
+        key_vault_uri = f"https://{key_vault_name}.vault.azure.net/"
+        credential = ClientSecretCredential(app_tenant, app_id, app_password)
+        keyvault_client = SecretClient(key_vault_uri, credential)
+        secret_key = keyvault_client.get_secret("Project-Key")
+        cog_key = secret_key.value
+
+        print('Project Key:', secret_key.value)
+
+        credential = AzureKeyCredential(cog_key)
         
         # Initialize the project client
         projectClient  = AIProjectClient(            
             credential = credential,
-                         endpoint=project_connection,
+            endpoint=project_connection,
         )
         
         ## Get a chat client

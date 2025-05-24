@@ -8,30 +8,37 @@
 ### Project-1 (Single service AI Resource)
    - Azure AI Language
 ### Project-2 (Multi service AI Resource)
-#### AI Services
+#### Resource Group
+##### AI Services Resource
    - Azure OpenAI
    - AI Vision
    - AI Face
    - AI Search
-#### Other Resource
+##### Other Resource
    - AI agent
    - Chat Bots
-### Project-3 (==To use model need a project==)
-#### Model Catelog 
+#### Project Properties
+##### Overview
+   - API Key
+   - Endpoints
+     - Azure AI Foundry project endpoint
+     - Azure OpenAI endpoint
+     - Azure AI Services endpoint
+       - Speech to Text endpoint
+       - Text to Speech endpoint
+##### Model Catelog (==If you have LLM model==)
    - GPT-4o-mini
    - O3
    - GPT-4
-#### Overview
-##### API Key
-##### Endpoints
-###### Azure AI Foundry project endpoint
-###### Azure OpenAI endpoint
-###### Azure AI Services endpoint
- - Speech to Text endpoint
- - Text to Speech endpoint
+
 # Azure Foundry Portal - Try Yourself
 ## Resource Group
 ### AI Services Resource
+  #### _Microsoft-managed model_ 
+   - Language detection
+   - Key phrase extraction
+   - Sentiment analysis
+   - Entity recognition
   #### Keys and EndPoints
  -  Key1
  -  Key2
