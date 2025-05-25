@@ -32,7 +32,7 @@ def main():
         secret_key = keyvault_client.get_secret("Project-Key")
         cog_key = secret_key.value
 
-        print('Project Key:', secret_key.value)
+        #print('Project Key:', secret_key.value)
 
         credential = AzureKeyCredential(cog_key)
         

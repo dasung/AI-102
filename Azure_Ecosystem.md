@@ -1,24 +1,30 @@
 # Azure AI Foundry - To Explore
-## Azure AI Hub Resources (for enterprice)
-### Project-X
+## Hub (==for enterprice ML==)
+### Azure AI Hub Resources
    - Storage
    - Compute
    - Specialized tools
-## Azure AI Foundry Resource `AI Foundry SDK`
-### Project-1 (Single service AI Resource)
-   - Azure AI Language
-### Project-2 (Multi service AI Resource)
+### Project
 #### Resource Group
-##### AI Services Resource
+##### Azure AI Foundry Resource
+   - [Resource Management](https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/03-Use-prompt-flow-chat.html)
+### Project Properties
+#### Fine-tuning
+#### [Prompt-flow](https://learn.microsoft.com/en-us/training/modules/get-started-prompt-flow-ai-studio/1-introduction)
+#### Content Understanding
+## Project (Single/Multi service AI Resource)
+### Resource Group
+#### AI Services Resource
    - Azure OpenAI
    - AI Vision
    - AI Face
    - AI Search
-##### Other Resource
+#### Azure AI Foundry Resource `AI Foundry SDK`
+#### Other Resource
    - AI agent
    - Chat Bots
-#### Project Properties
-##### Overview
+### Project Properties
+#### Overview
    - API Key
    - Endpoints
      - Azure AI Foundry project endpoint
@@ -26,10 +32,19 @@
      - Azure AI Services endpoint
        - Speech to Text endpoint
        - Text to Speech endpoint
-##### Model Catelog (==If you have LLM model==)
+#### Model Catelog (==If you need a LLM model==)
    - GPT-4o-mini
    - O3
-   - GPT-4
+   - [GPT-4](https://learn.microsoft.com/en-us/training/modules/ai-foundry-sdk/04-chat-client?pivots=python)
+      - via `Azure AI Foundry SDK`
+      - via `Azure OpenAI SDK`
+#### Models + Endpoints
+   - [Model deployment](https://learn.microsoft.com/en-us/training/modules/explore-models-azure-ai-studio/4-improve-model)
+   - [Embedding deployment](https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/04-Use-own-data.html)
+#### Data + Indexes
+   - Data Files
+   - [Vector Indexes](https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/04-Use-own-data.html) (==for RAG==)
+     - Vector Search `Azure AI Search Service`
 
 # Azure Foundry Portal - Try Yourself
 ## Resource Group
