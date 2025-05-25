@@ -41,3 +41,27 @@ By using the Azure AI Foundry SDK, you can develop rich AI applications that use
    * Identify the need to ground your language model with Retrieval Augmented Generation (RAG).
    * Index your data with Azure AI Search to make it searchable for language models.
    * Build an agent using RAG on your own data in Azure AI Foundry.
+
+# 2.6] Fine-tune a model
+   * Fine-tuning: Train a base language model on a dataset before integrating it in your application.
+   * [Fine Tuning](https://learn.microsoft.com/en-us/training/modules/finetune-model-copilot-ai-studio/2-understand-finetune) is more than RAG as it maximizes the consistency of the model's behavior
+
+   * Use Prompt engineering when model to behave a certain way (desired behavior)
+   * Use Fine-tune a model, When you want to improve the consistency of the (desired behavior). 
+
+   At a high level, finetuning requires you to:
+      * Prepare and upload training data,
+      * Train a new fine-tuned model,
+      * Evaluate your newly trained model,
+      * Deploy that model for inferencing, and
+      * Use the fine-tuned model in your application
+
+# 2.7] Implement a responsible Generative AI
+   Generative AI is one of the most powerful advances in technology ever.
+   How to Mitigate potential harms
+   * Azure AI resources provide built-in analysis using content filters.
+   * Azure AI Foundry Content Safety
+      * Prompt shields
+      * Groundedness detection
+      * Protected material detection
+      * Custom categories

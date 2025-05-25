@@ -2,6 +2,9 @@
 
 ## LLM
 
+### foundation model (==To fine-tune==)
+#### GPT-4 
+#### Llama-2-7b
 ### Chat Completion Model 
 #### GPT-4
 #### Mistral Large
