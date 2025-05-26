@@ -9,7 +9,8 @@
 ##### Azure AI Foundry Resource
    - [Resource Management](https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/03-Use-prompt-flow-chat.html)
 ### Project Properties
-#### Fine-tuning
+#### [Fine-tuning](https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/05-Finetune-model.html)
+   - _TrainingData.jsonl_
 #### [Prompt-flow](https://learn.microsoft.com/en-us/training/modules/get-started-prompt-flow-ai-studio/1-introduction)
 #### Content Understanding
 ## Project (Single/Multi service AI Resource)
@@ -36,11 +37,22 @@
    - GPT-4o-mini
    - O3
    - [GPT-4](https://learn.microsoft.com/en-us/training/modules/ai-foundry-sdk/04-chat-client?pivots=python)
-      - via `Azure AI Foundry SDK`
-      - via `Azure OpenAI SDK`
+      - code via `Azure AI Foundry SDK`
+      - code via `Azure OpenAI SDK`
 #### Models + Endpoints
    - [Model deployment](https://learn.microsoft.com/en-us/training/modules/explore-models-azure-ai-studio/4-improve-model)
    - [Embedding deployment](https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/04-Use-own-data.html)
+#### Playgrounds
+   - System Prompt
+   - [Default content filter](https://learn.microsoft.com/en-us/training/modules/responsible-ai-studio/6-operate-responsibly)
+      - Remove content filter
+
+#### Protect and govern
+   - Guardrails + controls
+      - Custom content filter
+   - Evaluation
+      - Manual _(Evaluation_Data.jsonl)_
+      - Auto
 #### Data + Indexes
    - Data Files
    - [Vector Indexes](https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/04-Use-own-data.html) (==for RAG==)

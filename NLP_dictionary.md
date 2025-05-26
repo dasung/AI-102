@@ -1,0 +1,1 @@
+![text-analytics-resource](./images/text-analytics-resource.png)
