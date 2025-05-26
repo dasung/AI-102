@@ -4,7 +4,7 @@
 This project contains my own shortnotes, created for Microsfot AI Enginner Associate Certification - AI-102.
 
 
-![design](https://github.com/user-attachments/assets/d1af0f84-9fe0-407c-98e3-df07b3ba3e7e)
+![design](./images/design.PNG)
 
 
 ## Setup Instructions

@@ -1,5 +1,5 @@
 
-# 2.2] NLP
+# 4.1] Azure AI Language Service
 
 ### Azure AI Language:
    * Language detection

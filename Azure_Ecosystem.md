@@ -1,3 +1,4 @@
+
 # Azure AI Foundry - To Explore
 ## Hub (==for enterprice ML==)
 ### Azure AI Hub Resources
@@ -14,16 +15,20 @@
 #### [Prompt-flow](https://learn.microsoft.com/en-us/training/modules/get-started-prompt-flow-ai-studio/1-introduction)
 #### Content Understanding
 ## Project (Single/Multi service AI Resource)
-### Resource Group
-#### AI Services Resource
-   - Azure OpenAI
-   - AI Vision
-   - AI Face
-   - AI Search
-#### Azure AI Foundry Resource `AI Foundry SDK`
-#### Other Resource
-   - AI agent
-   - Chat Bots
+### Default <span style="color: red; font-weight: bold; background-color: white; font-size: 18px; padding: 4px 8px; display: inline-block;">Azure AI Service</span>
+
+#### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Language Service</span>
+   - Language detection
+   - Key phrase extraction
+   - Sentiment analysis
+   - Entity linking
+#### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Vision Service</span>
+#### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Foundry Service</span> - code via `Azure AI Foundry SDK`
+#### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Speech Service</span>
+#### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Document Intelligence Service</span>
+#### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Search Service</span>
+
+
 ### Project Properties
 #### Overview
    - API Key
@@ -62,10 +67,7 @@
 ## Resource Group
 ### AI Services Resource
   #### _Microsoft-managed model_ 
-   - Language detection
-   - Key phrase extraction
-   - Sentiment analysis
-   - Entity recognition
+
   #### Keys and EndPoints
  -  Key1
  -  Key2
@@ -89,9 +91,10 @@
  -  Keys
  -  Secrets
  -  Certificate
- ```java
-   Azure Language Service
-```
+
+### Other Resource
+   - AI agent
+   - Chat Bots
 
 
 
