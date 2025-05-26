@@ -18,13 +18,24 @@
 ### Default <span style="color: red; font-weight: bold; background-color: white; font-size: 18px; padding: 4px 8px; display: inline-block;">Azure AI Service</span>
 
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Language Service</span>
+##### Pre-configured Features
+   - Question answering
    - Language detection
    - Key phrase extraction
    - Sentiment analysis
    - Entity linking
+   - Summarization
+##### Learned Features
+   - Conversational language understanding [(CLU)](https://learn.microsoft.com/en-us/training/modules/build-language-understanding-model/2a-understand-prebuilt-capabilities)
+      - intents
+      - utterances
+      - entities
+   - [Custom text classification](https://learn.microsoft.com/en-us/training/modules/build-language-understanding-model/2a-understand-prebuilt-capabilities)
+   - [Custom named entity recognition](https://learn.microsoft.com/en-us/training/modules/custom-name-entity-recognition/2-understand-custom-named)
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Vision Service</span>
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Foundry Service</span> - code via `Azure AI Foundry SDK`
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Speech Service</span>
+#### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Translator Service</span>
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Document Intelligence Service</span>
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Search Service</span>
 
@@ -66,7 +77,18 @@
 # Azure Foundry Portal - Try Yourself
 ## Resource Group
 ### AI Services Resource
-  #### _Microsoft-managed model_ 
+  #### _Microsoft-Inovated models_ 
+  ##### <span style="color: green;">Language Service Resource</span>
+   - Text AnalysisApps
+     - Language detection
+     - Key phrase extraction
+     - Sentiment analysis
+     - Entity linking
+   - [Question AnsweringApp](https://learn.microsoft.com/en-us/training/modules/build-language-understanding-model/2a-understand-prebuilt-capabilities)
+      - host [Knowladge Base](https://learn.microsoft.com/en-us/training/modules/create-question-answer-solution-ai-language/4-create-knowledge-base) via `Azure AI Search Service`
+   - [CLU App](https://learn.microsoft.com/en-us/training/modules/build-language-understanding-model/2-understand-resources-for-building)
+   - [Custom Named Entity Recognition App](https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Exercises/05-extract-custom-entities.html)
+
 
   #### Keys and EndPoints
  -  Key1
