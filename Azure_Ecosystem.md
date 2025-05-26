@@ -89,5 +89,10 @@
  -  Keys
  -  Secrets
  -  Certificate
+ ```java
+   Azure Language Service
+```
+
+
 
 

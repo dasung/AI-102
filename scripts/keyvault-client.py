@@ -40,21 +40,46 @@ def main():
         while userText.lower() != 'quit':
             userText = input('\nEnter some text ("quit" to stop)\n')
             if userText.lower() != 'quit':
-                language = GetLanguage(userText)
-                print('Language:', language)
+                CallAxureLanguageService(userText)
+                
 
     except Exception as ex:
         print(ex)
 
-def GetLanguage(text):
+def CallAxureLanguageService(text):
 
     # Create client using endpoint and key
     credential = AzureKeyCredential(cog_key)
-    client = TextAnalyticsClient(endpoint=ai_endpoint, credential=credential)
+    ai_client = TextAnalyticsClient(endpoint=ai_endpoint, credential=credential)
 
-    # Call the service to get the detected language
-    detectedLanguage = client.detect_language(documents = [text])[0]
-    return detectedLanguage.primary_language.name
+    # call the service to get the detected language
+    detectedLanguage = ai_client.detect_language(documents = [text])[0]
+    print('User Input Language:', detectedLanguage.primary_language.name)
+
+    # call service to get sentiment
+    sentimentAnalysis = ai_client.analyze_sentiment(documents=[text])[0]
+    print("\nSentiment: {}".format(sentimentAnalysis.sentiment))
+
+    # call service to get key phrases
+    phrases = ai_client.extract_key_phrases(documents=[text])[0].key_phrases
+    if len(phrases) > 0:
+        print("\nKey Phrases:")
+        for phrase in phrases:
+            print('\t{}'.format(phrase))
+    
+    # call service to get entities
+    entities = ai_client.recognize_entities(documents=[text])[0].entities
+    if len(entities) > 0:
+        print("\nEntities")
+        for entity in entities:
+            print('\t{} ({})'.format(entity.text, entity.category))
+
+    # call service to extract linked entities
+    entities = ai_client.recognize_linked_entities(documents=[text])[0].entities
+    if len(entities) > 0:
+        print("\nLinks")
+        for linked_entity in entities:
+            print('\t{} ({})'.format(linked_entity.name, linked_entity.url))
 
 
 if __name__ == "__main__":
