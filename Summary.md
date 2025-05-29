@@ -1,0 +1,2 @@
+# If your project needs LLM integration & Training AI Hub project is a must:
+## [Audio-enabled generative AI App](https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Exercises/09-audio-chat.html)

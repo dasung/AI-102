@@ -13,9 +13,11 @@
 #### DeepSeek-R1
 #### O1
 
-### Multi-model (image+audio)
+### Multi-model (Text+image+audio)
 #### GPT-4o 
+#### Gpt-4o-mini
 #### Phi3-vision
+#### Microsoft Phi-4-multimodal-instruct
 
 ### Reigion-specific Models
 #### Core42 JAIS (Arabic language)

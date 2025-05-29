@@ -8,7 +8,9 @@
 ### Project
 #### Resource Group
 ##### Azure AI Foundry Resource
-   - [Resource Management](https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/03-Use-prompt-flow-chat.html)
+   - [Resource authorization](https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/03-Use-prompt-flow-chat.html)
+   - [Audio-enabled generative AI App](https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Exercises/09-audio-chat.html)
+      - Phi-4-multimodal-instruct
 ### Project Properties
 #### [Fine-tuning](https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/05-Finetune-model.html)
    - _TrainingData.jsonl_
@@ -35,7 +37,17 @@
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Vision Service</span>
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Foundry Service</span> - code via `Azure AI Foundry SDK`
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Speech Service</span>
+   - Speech Recognition
+      - `Speech-to-Text API`
+   - Speech synthesis
+     - `Text-to-Speech API`
+   - Speech Translation
+      - `Speech Translation API`
+   - Keyword Recognition
+   - Intent Recognition
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Translator Service</span>
+   - Translation (Good afternoon)
+   - Transliteration (Kon'nichiwa)
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Document Intelligence Service</span>
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Search Service</span>
 
@@ -77,8 +89,8 @@
 # Azure Foundry Portal - Try Yourself
 ## Resource Group
 ### AI Services Resource
-  #### _Microsoft-Inovated models_ 
-  ##### <span style="color: green;">Language Service Resource</span>
+#### _Microsoft-Inovated models_ 
+##### <span style="color: green;">Language Service Resource</span>
    - Text AnalysisApps
      - Language detection
      - Key phrase extraction
@@ -88,6 +100,14 @@
       - host [Knowladge Base](https://learn.microsoft.com/en-us/training/modules/create-question-answer-solution-ai-language/4-create-knowledge-base) via `Azure AI Search Service`
    - [CLU App](https://learn.microsoft.com/en-us/training/modules/build-language-understanding-model/2-understand-resources-for-building)
    - [Custom Named Entity Recognition App](https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Exercises/05-extract-custom-entities.html)
+
+
+##### <span style="color: green;">Translator Service Resource</span>
+   - [Text TranslatorApp](https://learn.microsoft.com/en-us/training/modules/translate-text-with-translator-service/3-understand-language-detection-translation-transliteration)
+
+##### <span style="color: green;">Speech Service Resource</span>
+   - [Speech-enabled App](https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Exercises/07-speech.html)
+   - [Speech Translate/Synthesize App](https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Exercises/08-translate-speech.html)
 
 
   #### Keys and EndPoints

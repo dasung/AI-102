@@ -46,3 +46,12 @@
       * Recall - How many true-positives lables were identified
       * Precision - How many of the predicted labels are correct
       * F1 Score - A function of recall and precision,
+### 4.5] Custom named entity recognition
+
+### 4.6] Translate text with Azure AI Translator service
+
+### 4.7] Create speech-enabled apps with Azure AI services
+
+### 4.8] Translate speech with the Azure AI Speech service
+
+### 4.9] Develop an audio-enabled generative AI application
