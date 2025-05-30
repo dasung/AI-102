@@ -17,7 +17,7 @@
 #### [Prompt-flow](https://learn.microsoft.com/en-us/training/modules/get-started-prompt-flow-ai-studio/1-introduction)
 #### Content Understanding
 ## Project (Single/Multi service AI Resource)
-### Default <span style="color: red; font-weight: bold; background-color: white; font-size: 18px; padding: 4px 8px; display: inline-block;">Azure AI Service</span>
+###  <span style="color: red; font-weight: bold; background-color: black; font-size: 16px; padding: 8px 8px; display: inline-block;">Default Azure AI Services</span>
 
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Language Service</span>
 ##### Pre-configured Features
@@ -85,6 +85,15 @@
    - Data Files
    - [Vector Indexes](https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/04-Use-own-data.html) (==for RAG==)
      - Vector Search `Azure AI Search Service`
+
+### <span style="color: yellow; font-weight: bold; background-color: black; font-size: 16px; padding: 8px 8px; display: inline-block;">Azure Foundry Agent Service</span>
+####  Agents Playground
+#### Model Deployment
+#### Setup
+##### Agent Name
+##### Instructions
+##### Knowledge
+##### Code interpreter tool 
 
 # Azure Foundry Portal - Try Yourself
 ## Resource Group
