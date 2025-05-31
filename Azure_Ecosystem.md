@@ -92,8 +92,16 @@
 #### Setup
 ##### Agent Name
 ##### Instructions
-##### Knowledge
-##### Code interpreter tool 
+#### Tools
+##### [Built-in tools](https://learn.microsoft.com/en-us/training/modules/build-agent-with-custom-tools/1-introduction)
+   * [Knowledge tool](https://learn.microsoft.com/en-us/training/modules/develop-ai-agent-azure/4-when-use-agent-service)
+     * File search
+     * Azure AI Search
+   * [Code interpreter tool](https://microsoftlearning.github.io/mslearn-ai-agents/Instructions/01-agent-fundamentals.html)
+
+##### [Custom tools](https://learn.microsoft.com/en-us/training/modules/build-agent-with-custom-tools/3-custom-tool-options)
+   * Custom function - (LLM-Generated)
+   * Azure Functions - (External Workflow)
 
 # Azure Foundry Portal - Try Yourself
 ## Resource Group
