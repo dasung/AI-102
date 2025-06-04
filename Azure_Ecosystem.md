@@ -102,6 +102,8 @@
 ##### [Custom tools](https://learn.microsoft.com/en-us/training/modules/build-agent-with-custom-tools/3-custom-tool-options)
    * Custom function - (LLM-Generated)
    * Azure Functions - (External Workflow)
+   * OpenAPI specification tools
+   * Azure Logic Apps
 
 # Azure Foundry Portal - Try Yourself
 ## Resource Group
