@@ -12,6 +12,8 @@ from azure.keyvault.secrets import SecretClient
 from azure.identity import ClientSecretCredential
 from azure.core.credentials import AzureKeyCredential
 from user_functions import user_functions
+import config
+from Authenticator import get_azure_key_credential
 
 def main(): 
 
@@ -20,27 +22,16 @@ def main():
 
     # Load environment variables from .env file
     load_dotenv()
-    project_endpoint= os.getenv("PROJECT_ENDPOINT")
+    project_endpoint = config.AI_ENDPOINT
     model_deployment = os.getenv("MODEL_DEPLOYMENT_NAME")
 
     # Get authentication
-    key_vault_name = os.getenv('KEY_VAULT')
-    app_tenant = os.getenv('TENANT_ID')
-    app_id = os.getenv('APP_ID')
-    app_password = os.getenv('APP_PASSWORD')
-
-    key_vault_uri = f"https://{key_vault_name}.vault.azure.net/"
-    credential = ClientSecretCredential(app_tenant, app_id, app_password)
-    keyvault_client = SecretClient(key_vault_uri, credential)
-    secret_key = keyvault_client.get_secret("Project-Key")
-    cog_key = secret_key.value
-
-    credential = AzureKeyCredential(cog_key)
+    credential = get_azure_key_credential()
 
     # Connect to the Agent client
     agent_client = AgentsClient(
-    endpoint=project_endpoint,
-    credential=credential
+        endpoint=project_endpoint,
+        credential=credential
     )
 
 
