@@ -41,8 +41,6 @@ def main():
     agent_client = AgentsClient(
     endpoint=project_endpoint,
     credential=credential
-        (exclude_environment_credential=True,
-         exclude_managed_identity_credential=True)
     )
 
 

@@ -27,12 +27,13 @@ def main():
         app_tenant = os.getenv('TENANT_ID')
         app_id = os.getenv('APP_ID')
         app_password = os.getenv('APP_PASSWORD')
-
+        secret_name = os.getenv('SECRET_NAME')
+        
         # Get Azure AI services key from keyvault using the service principal credentials
         key_vault_uri = f"https://{key_vault_name}.vault.azure.net/"
         credential = ClientSecretCredential(app_tenant, app_id, app_password)
         keyvault_client = SecretClient(key_vault_uri, credential)
-        secret_key = keyvault_client.get_secret("AI-Services-Key")
+        secret_key = keyvault_client.get_secret(secret_name)
         cog_key = secret_key.value
 
         # Get user input (until they enter "quit")

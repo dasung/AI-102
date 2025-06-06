@@ -149,9 +149,10 @@
   #### Access Control
   - Role Assignments 
 ### Key Vault Resource
- -  Keys
- -  Secrets
- -  Certificate
+ - Keys
+ - Secrets
+   - _service principal_
+ - Certificate
 
 ### Other Resource
    - AI agent
