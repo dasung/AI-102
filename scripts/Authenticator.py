@@ -1,7 +1,7 @@
 from azure.core.credentials import AzureKeyCredential
 from azure.keyvault.secrets import SecretClient
 from azure.identity import ClientSecretCredential
-from scripts import config
+import config
 
 def get_azure_key_credential():
     """

@@ -3,7 +3,7 @@ import os
 from azure.ai.textanalytics import TextAnalyticsClient
 from azure.core.credentials import AzureKeyCredential
 from Authenticator import get_azure_key_credential
-from scripts import config
+import config
 
 """
     Access to Azure AI services is typically controlled through authentication keys, 
