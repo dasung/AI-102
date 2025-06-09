@@ -26,14 +26,16 @@ def main():
     model_deployment = os.getenv("MODEL_DEPLOYMENT_NAME")
 
     # Get authentication
-    credential = get_azure_key_credential()
+    credential = ClientSecretCredential(config.APP_TENANT, config.APP_ID, config.APP_PASSWORD)
 
+    print("\nDasung Conversation Log:\n")
     # Connect to the Agent client
     agent_client = AgentsClient(
         endpoint=project_endpoint,
         credential=credential
     )
 
+    print("\nAgent created:\n")
 
     # Define an agent that can use the custom functions
     with agent_client:
