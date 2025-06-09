@@ -22,8 +22,8 @@ def main():
 
     # Load environment variables from .env file
     load_dotenv()
-    project_endpoint = config.AI_ENDPOINT
-    model_deployment = os.getenv("MODEL_DEPLOYMENT_NAME")
+    project_endpoint = config.AZURE_AI_AGENT_PROJECT_ENDPOINT
+    model_deployment = config.AZURE_AI_AGENT_MODEL_DEPLOYMENT
 
     # Get authentication
     credential = ClientSecretCredential(config.APP_TENANT, config.APP_ID, config.APP_PASSWORD)
@@ -33,6 +33,8 @@ def main():
     agent_client = AgentsClient(
         endpoint=project_endpoint,
         credential=credential
+            (exclude_environment_credential=True,
+            exclude_managed_identity_credential=True)
     )
 
     print("\nAgent created:\n")

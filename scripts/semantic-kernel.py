@@ -30,7 +30,12 @@ async def process_expenses_data(prompt, expenses_data):
 
     # Get configuration settings
     load_dotenv()
-    ai_agent_settings = AzureAIAgentSettings()
+
+    ai_agent_settings = AzureAIAgentSettings(
+        endpoint=os.getenv("AZURE_AI_AGENT_ENDPOINT"),  # <- This is a URL!
+        api_key=os.getenv("AZURE_AI_AGENT_KEY"),
+        deployment_name=os.getenv("AZURE_AI_AGENT_MODEL_DEPLOYMENT_NAME")
+    )
 
     # Connect to the Azure AI Foundry project
 

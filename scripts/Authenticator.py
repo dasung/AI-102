@@ -11,4 +11,7 @@ def get_azure_key_credential():
     keyvault_client = SecretClient(config.KEY_VAULT_URI, credential)
     secret_key = keyvault_client.get_secret(config.SECRET_NAME)
     cog_key = secret_key.value
+
+    print('Project Key:', secret_key.value)
+    
     return AzureKeyCredential(cog_key)
