@@ -42,3 +42,21 @@
 ### How to Architec AI into massive set of Data in an Organization
  - [Margie's Travel agency's document indexing AI Design](https://learn.microsoft.com/en-us/training/modules/create-azure-cognitive-search-solution/1-introduction) with Azure AI Search
 
+ ### Cognitive AI services
+
+ - Cognitive Skill AI refers to artificial intelligence systems designed to mimic or replicate human-like cognitive abilities, such as reasoning, problem-solving, learning, perception, and decision-making. 
+ - Microsoft Azure offers several Cognitive AI services under its Azure AI Services (formerly Cognitive Services) suite. These services provide pre-built AI models for vision, language, speech, decision-making, and more, allowing developers to integrate advanced cognitive capabilities into applications without building models from scratch.
+
+ Eg:
+ -  Vision AI (Image & Video Analysis)
+   - Computer Vision – Analyze images
+   - Video Indexer – Analyze videos for insights
+- Speech AI (Voice Processing)
+   - Text-to-Speech – Generate natural-sounding speech.
+   - Speech Translation – Real-time speech translation.
+- Language AI (Natural Language Processing)  
+   - Text Analytics – Sentiment analysis, key phrase extraction.
+
+ ### Azure AI Search services
+- Azure AI Search uses an enrichment pipeline of AI skills (Cognitive Skill) to extract AI-generated fields from documents and include them in a search index.
+- The index might be considered the primary output from an indexing process, the enriched data it contains might also be useful in other ways.

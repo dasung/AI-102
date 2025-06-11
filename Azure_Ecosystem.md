@@ -131,7 +131,7 @@
 
 # Azure Foundry Portal - Try Yourself
 ## Resource Group
-### AI Services Resource
+### <span style="color: red; font-weight: bold; background-color: black; font-size: 20px; padding: 8px 8px; display: inline-block;white-space: pre;">Azure AI Services Resource<br/><br/>via `multi service account`</span>
 #### _Microsoft-Inovated models_ 
 ##### <span style="color: green;">Language Service Resource</span>
    - Text AnalysisApps
@@ -152,7 +152,26 @@
    - [Speech-enabled App](https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Exercises/07-speech.html)
    - [Speech Translate/Synthesize App](https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Exercises/08-translate-speech.html)
 
+##### <span style="color: green;">Face Resource</span>
+   - [Face Detection](https://microsoftlearning.github.io/mslearn-ai-vision/Instructions/Labs/03-face-service.html)
 
+##### <span style="color: green;">Custom Vision Resource</span>
+   - [Image classification](https://learn.microsoft.com/en-us/training/modules/classify-images/3-understand-image-classification)
+   - [Object Detection](https://learn.microsoft.com/en-us/training/modules/detect-objects-images/3-train-object-detector)
+
+##### <span style="color: green;">Azure AI Search Resource</span>
+   - [Replicas and partitions](https://learn.microsoft.com/en-us/training/modules/create-azure-cognitive-search-solution/2-manage-capacity)
+   - [search components](https://learn.microsoft.com/en-us/training/modules/create-azure-cognitive-search-solution/3-search-components)
+     - Data source
+     - Skillset (Enrich data with AI)
+     - Indexer (Engine does indexing)
+       - Knowledge stores
+         - Azure Data Factory
+         - Microsoft Power BI
+         - Downstreaming Images
+         - `Azure AI Search REST interface`
+     - Index (serchble unit)
+       
   #### Keys and EndPoints
  -  Key1
  -  Key2
@@ -160,16 +179,14 @@
   #### Monitoring
   -  Create Alerts
   -  Visualize Metrics
+### Storage Account Resource
+   - data indexing for [Azure AI Search Service](https://microsoftlearning.github.io/mslearn-knowledge-mining/Instructions/Exercises/01-azure-search.html)
+   - [knowledgeStore object](https://learn.microsoft.com/en-us/training/modules/create-knowledge-store-azure-cognitive-search/3-define-knowledge-store)
 ### `ACI` Container Instances Resource
 #### Overview
    - Status
    - IP Address
    - FQDN
-### Face Resource
-#### [Face Detection](https://microsoftlearning.github.io/mslearn-ai-vision/Instructions/Labs/03-face-service.html)
-### Custom Vision Resource
-#### [Image classification](https://learn.microsoft.com/en-us/training/modules/classify-images/3-understand-image-classification)
-#### [Object Detection](https://learn.microsoft.com/en-us/training/modules/detect-objects-images/3-train-object-detector)
 ### Azure AI Content Safety Resource
   #### Keys and EndPoints
  -  Key1
