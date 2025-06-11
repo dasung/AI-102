@@ -13,5 +13,12 @@ def get_azure_key_credential():
     cog_key = secret_key.value
 
     print('Project Key:', secret_key.value)
-    
+
     return AzureKeyCredential(cog_key)
+
+def get_token_credential():
+    """
+    Authenticates to Azure using ClientSecretCredential and returns a TokenCredential for use with Azure SDK clients (such as AgentsClient).
+    """
+    credential = ClientSecretCredential(config.APP_TENANT, config.APP_ID, config.APP_PASSWORD)
+    return credential

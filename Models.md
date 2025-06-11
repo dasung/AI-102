@@ -9,6 +9,10 @@
 #### GPT-4
 #### Mistral Large
 
+### [Image Generation Model](https://learn.microsoft.com/en-us/training/modules/generate-images-azure-openai/2-what-is-dall-e)
+#### DALL-E 3
+#### GPT-Image 1
+
 ### Reasoning models
 #### DeepSeek-R1
 #### O1

@@ -8,9 +8,14 @@
 ### Project
 #### Resource Group
 ##### Azure AI Foundry Resource
+   - <span style="color: red; font-weight: bold; background-color: black; font-size: 16px; padding: 8px 8px; display: inline-block;">Default Azure AI Services</span>
    - [Resource authorization](https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/03-Use-prompt-flow-chat.html)
    - [Audio-enabled generative AI App](https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Exercises/09-audio-chat.html)
       - Phi-4-multimodal-instruct
+   - [Vision-based generative AI Chat App](https://microsoftlearning.github.io/mslearn-ai-vision/Instructions/Labs/08-gen-ai-vision.html)
+      - Phi-4-multimodal-instruct
+   - [Image generative AI App](https://learn.microsoft.com/en-us/training/modules/generate-images-azure-openai/4-dall-e-rest-api)
+      -  DALL-E 3
 ### Project Properties
 #### [Fine-tuning](https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/05-Finetune-model.html)
    - _TrainingData.jsonl_
@@ -35,6 +40,24 @@
    - [Custom text classification](https://learn.microsoft.com/en-us/training/modules/build-language-understanding-model/2a-understand-prebuilt-capabilities)
    - [Custom named entity recognition](https://learn.microsoft.com/en-us/training/modules/custom-name-entity-recognition/2-understand-custom-named)
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Vision Service</span>
+   - [Image Analysis](https://learn.microsoft.com/en-us/training/modules/analyze-images/3-analyze-image?pivots=python)
+      - VisualFeatures.TAGS
+      - VisualFeatures.OBJECTS
+      - VisualFeatures.CAPTION
+      - VisualFeatures.DENSE_CAPTIONS
+      - VisualFeatures.PEOPLE
+      - VisualFeatures.SMART_CROPS
+      - VisualFeatures.READ
+   - [Optical character recognition (OCR)](https://learn.microsoft.com/en-us/training/modules/read-text-images-documents-with-computer-vision-service/2-options-read-text)
+   - [Read text in images](https://learn.microsoft.com/en-us/training/modules/read-text-images-documents-with-computer-vision-service/4-use-read-api?pivots=python)
+      - [Optical character recognition (OCR)](https://learn.microsoft.com/en-us/training/modules/read-text-images-documents-with-computer-vision-service/4-use-read-api?pivots=python)
+   - [Face Analysis](https://learn.microsoft.com/en-us/training/modules/detect-analyze-recognize-faces/3-detect-analyze-faces?pivots=python)
+#### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Custom Vision service</span>
+   - [Custom Vision portal](https://learn.microsoft.com/en-us/training/modules/classify-images/2-provision-azure-resources-for-custom-vision)
+
+#### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Video Indexer service</span>
+   - [Video Indexer portal](https://learn.microsoft.com/en-us/training/modules/analyze-video/2-understand-video-indexer-capabilities)
+   
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Foundry Service</span> - code via `Azure AI Foundry SDK`
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Speech Service</span>
    - Speech Recognition
@@ -49,6 +72,9 @@
    - Translation (Good afternoon)
    - Transliteration (Kon'nichiwa)
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Document Intelligence Service</span>
+   - [Form Processing](https://learn.microsoft.com/en-us/training/modules/read-text-images-documents-with-computer-vision-service/2-options-read-text)
+#### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Content Understanding Service</span>
+   - [Multimodal content extraction](https://learn.microsoft.com/en-us/training/modules/read-text-images-documents-with-computer-vision-service/2-options-read-text)
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Search Service</span>
 
 
@@ -141,6 +167,11 @@
    - Status
    - IP Address
    - FQDN
+### Face Resource
+#### [Face Detection](https://microsoftlearning.github.io/mslearn-ai-vision/Instructions/Labs/03-face-service.html)
+### Custom Vision Resource
+#### [Image classification](https://learn.microsoft.com/en-us/training/modules/classify-images/3-understand-image-classification)
+#### [Object Detection](https://learn.microsoft.com/en-us/training/modules/detect-objects-images/3-train-object-detector)
 ### Azure AI Content Safety Resource
   #### Keys and EndPoints
  -  Key1

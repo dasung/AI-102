@@ -13,7 +13,7 @@ from azure.identity import ClientSecretCredential
 from azure.core.credentials import AzureKeyCredential
 from user_functions import user_functions
 import config
-from Authenticator import get_azure_key_credential
+from Authenticator import get_token_credential
 
 def main(): 
 
@@ -26,15 +26,13 @@ def main():
     model_deployment = config.AZURE_AI_AGENT_MODEL_DEPLOYMENT
 
     # Get authentication
-    credential = ClientSecretCredential(config.APP_TENANT, config.APP_ID, config.APP_PASSWORD)
+    credential = get_token_credential()
 
     print("\nDasung Conversation Log:\n")
     # Connect to the Agent client
     agent_client = AgentsClient(
         endpoint=project_endpoint,
         credential=credential
-            (exclude_environment_credential=True,
-            exclude_managed_identity_credential=True)
     )
 
     print("\nAgent created:\n")
