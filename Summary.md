@@ -37,3 +37,8 @@
 
 ###### <span style="color: green;font-weight: bold; font-size: 16px;">When developing and testing an application, it's common to use key-based authentication or Microsoft Entra ID authentication based on your own Azure credentials. In production, consider using Microsoft Entra ID authentication based on a managed identity for your Azure application or use Azure Key Vault to store authorization keys securely.</span>
 
+---
+
+### How to Architec AI into massive set of Data in an Organization
+ - [Margie's Travel agency's document indexing AI Design](https://learn.microsoft.com/en-us/training/modules/create-azure-cognitive-search-solution/1-introduction) with Azure AI Search
+

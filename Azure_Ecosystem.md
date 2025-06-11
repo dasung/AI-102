@@ -7,8 +7,7 @@
    - Specialized tools
 ### Project
 #### Resource Group
-##### Azure AI Foundry Resource
-   - <span style="color: red; font-weight: bold; background-color: black; font-size: 16px; padding: 8px 8px; display: inline-block;">Default Azure AI Services</span>
+##### <span style="color: red; font-weight: bold; background-color: black; font-size: 18px; padding: 8px 8px; display: inline-block;white-space: pre;">Azure AI Foundry Resource [Default]<br/><br/>code via `Azure AI Foundry SDK`</span>
    - [Resource authorization](https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/03-Use-prompt-flow-chat.html)
    - [Audio-enabled generative AI App](https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Exercises/09-audio-chat.html)
       - Phi-4-multimodal-instruct
@@ -22,7 +21,7 @@
 #### [Prompt-flow](https://learn.microsoft.com/en-us/training/modules/get-started-prompt-flow-ai-studio/1-introduction)
 #### Content Understanding
 ## Project (Single/Multi service AI Resource)
-###  <span style="color: red; font-weight: bold; background-color: black; font-size: 16px; padding: 8px 8px; display: inline-block;">Default Azure AI Services</span>
+###  <span style="color: red; font-weight: bold; background-color: black; font-size: 20px; padding: 8px 8px; display: inline-block;white-space: pre;">Azure AI Foundry Service [Default]<br/><br/>code via `Azure AI Foundry SDK`</span>
 
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Language Service</span>
 ##### Pre-configured Features
@@ -58,7 +57,6 @@
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Video Indexer service</span>
    - [Video Indexer portal](https://learn.microsoft.com/en-us/training/modules/analyze-video/2-understand-video-indexer-capabilities)
    
-#### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Foundry Service</span> - code via `Azure AI Foundry SDK`
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Speech Service</span>
    - Speech Recognition
       - `Speech-to-Text API`
