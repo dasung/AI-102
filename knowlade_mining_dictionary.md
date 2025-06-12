@@ -69,3 +69,6 @@ Example custom skill - [tabulates the frequency of individual words in a documen
   - Object projections are JSON representations of the indexed documents.
   - File projections are JPEG files containing image data extracted from documents.
   - Table projections create a relational schema for the extracted data.
+
+----
+## Advanced Search Features in Azure AI Search

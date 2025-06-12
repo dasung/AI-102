@@ -71,6 +71,16 @@
    - Transliteration (Kon'nichiwa)
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Document Intelligence Service</span>
    - [Form Processing](https://learn.microsoft.com/en-us/training/modules/read-text-images-documents-with-computer-vision-service/2-options-read-text)
+   - [prebuilt models](https://learn.microsoft.com/en-us/training/modules/plan-form-recognizer-solution/4-choose-model-type)
+     - Read model
+     - Layout model
+     - Invoice model
+     - Receipt model
+     - W-2 tax model
+   - [Custom models](https://learn.microsoft.com/en-us/training/modules/plan-form-recognizer-solution/2-understand)
+     - Custom template models
+     - [Custom neural models](https://learn.microsoft.com/en-us/training/modules/work-form-recognizer/6-train-custom-models)
+   - [Composed models](https://learn.microsoft.com/en-us/training/modules/plan-form-recognizer-solution/4-choose-model-type)
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Content Understanding Service</span>
    - [Multimodal content extraction](https://learn.microsoft.com/en-us/training/modules/read-text-images-documents-with-computer-vision-service/2-options-read-text)
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Search Service</span>
@@ -200,6 +210,12 @@
    - _service principal_
  - Certificate
 
+### Azure AI Document Intelligence resources
+#### Resource Management
+##### Keys and EndPoints
+ -  Key1
+ -  Key2
+ -  Endpoint
 ### Other Resource
    - AI agent
    - Chat Bots
