@@ -72,3 +72,41 @@ Example custom skill - [tabulates the frequency of individual words in a documen
 
 ----
 ## Advanced Search Features in Azure AI Search
+
+![score-phase-small](./images/score-phase-small.png)
+
+### Term Boosting
+### Improve the relevance of results by adding scoring profiles
+### Analyzers in AI Search
+- Language analyzers
+- Specialized analyzers
+- [custom analyzer](https://learn.microsoft.com/en-us/training/modules/implement-advanced-search-features-azure-cognitive-search/04-improve-index-analyzers-tokenized-terms)
+  - Character filters
+  - Tokenizers
+  - Token filters
+
+----
+
+## Azure AI Search using Azure Data Factory
+### Use Azure Data Factory to copy data into an Azure AI Search Index
+### Use the Azure AI Search push API to add to an index from any external data source
+
+---
+
+## Maintain an Azure AI Search solution
+### Use Language Studio to enrich Azure AI Search indexes
+### Enrich an AI Search index with custom classes
+
+---
+
+## Perform search reranking with semantic ranking in Azure AI Search
+### Describe semantic ranking
+### Set up semantic ranking
+### Perform semantic ranking on an index
+
+---
+
+## Perform vector search and retrieval in Azure AI Search
+### Describe vector search
+### Describe embeddings
+### Run vector search queries using the REST API
