@@ -53,7 +53,36 @@
      - Knowladge Miniing and improve search results
    - Defined your custom entity clearly
 
-<pre lang="markdown"> ```mermaid flowchart TD Start --> Step1 Step1 --> Step2 Step2 --> Decision Decision -->|Yes| Step3 Decision -->|No| Step4 Step3 --> End Step4 --> End ``` </pre>
+
+```mermaid
+flowchart TD
+   subgraph Horizontal1[Setup AI Service]
+      direction LR
+      X[Azure AI Language service]:::box --> Y[Add Storage account]:::box
+      Y --> Z[add Storage Blob Data Contributor]:::box
+   end
+   subgraph Horizontal2[Custom NER project]
+      direction LR
+      C[Label your data]:::box
+      D[Add entity]:::box
+      E[Train your model]:::box
+      G[Evalate your model]:::box
+      H[Deploy your model]:::box
+      C --> D --> E --> G --> H
+   end
+   a[Azure Portal]:::box --> Horizontal1
+   Horizontal1 --> A
+   A[Upload sample ads]:::box
+   A --> Horizontal2 --> F[Client's code: TextAnalyticsClient ]:::box
+   F --> K[Test app for custom entitties]:::box
+
+     %% Styling
+    classDef box fill:#ECECFF,color:black
+    classDef green-step fill:#107C10,color:white,stroke:#107C10
+    style Horizontal1 fill:#FFF4BD,color:black,stroke:#FFD700,stroke-width:1px
+    style Horizontal2 fill:#FFF4BD,color:black,stroke:#FFD700,stroke-width:1px
+```
+
 
 ### 4.6] Translate text with Azure AI Translator service
 

@@ -57,7 +57,7 @@ npm install
 ```bash
 npm install -g markmap-cli
 ```
-
+  VS Code Graph visualize - Markdown preview Mermaid Support
 ## Usage
 - To recognize text in images, follow the instructions in `ai-102.md` (to be created).
 - To visualize markdown as a mindmap:
@@ -68,6 +68,7 @@ markmap ai-102.md
 ## Features
 - Text recognition in images
 - Markdown mindmap visualization
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
