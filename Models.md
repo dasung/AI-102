@@ -51,5 +51,3 @@
 ## Embedding models
 ### Ada
 ### Cohere
-
-# ee

@@ -48,6 +48,13 @@
       * F1 Score - A function of recall and precision,
 ### 4.5] Custom named entity recognition
 
+   - [Why custom NER?](https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Exercises/05-extract-custom-entities.html) 
+     -  When the entities you want to extract are not included in the built-in services
+     - Knowladge Miniing and improve search results
+   - Defined your custom entity clearly
+
+<pre lang="markdown"> ```mermaid flowchart TD Start --> Step1 Step1 --> Step2 Step2 --> Decision Decision -->|Yes| Step3 Decision -->|No| Step4 Step3 --> End Step4 --> End ``` </pre>
+
 ### 4.6] Translate text with Azure AI Translator service
 
 ### 4.7] Create speech-enabled apps with Azure AI services

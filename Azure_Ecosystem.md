@@ -24,20 +24,22 @@
 ###  <span style="color: red; font-weight: bold; background-color: black; font-size: 20px; padding: 8px 8px; display: inline-block;white-space: pre;">Azure AI Foundry Service [Default]<br/><br/>code via `Azure AI Foundry SDK`</span>
 
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Language Service</span>
-##### Pre-configured Features
-   - Question answering
-   - Language detection
-   - Key phrase extraction
-   - Sentiment analysis
-   - Entity linking
+##### [Pre-configured Features](https://learn.microsoft.com/en-us/training/modules/analyze-text-ai-language/)
+   - Detect Language
+   - Extract Key phrases
+   - Analyze Sentiment
+   - Extract Entities ([Built-In NER](https://learn.microsoft.com/en-us/training/modules/analyze-text-ai-language/6-extract-entities))
+   - Extract Linked Entities
    - Summarization
+   - Question Answering
 ##### Learned Features
+   - [Custom NER](https://learn.microsoft.com/en-us/training/modules/custom-name-entity-recognition/2-understand-custom-named)
    - Conversational language understanding [(CLU)](https://learn.microsoft.com/en-us/training/modules/build-language-understanding-model/2a-understand-prebuilt-capabilities)
       - intents
       - utterances
       - entities
    - [Custom text classification](https://learn.microsoft.com/en-us/training/modules/build-language-understanding-model/2a-understand-prebuilt-capabilities)
-   - [Custom named entity recognition](https://learn.microsoft.com/en-us/training/modules/custom-name-entity-recognition/2-understand-custom-named)
+
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Vision Service</span>
    - [Image Analysis](https://learn.microsoft.com/en-us/training/modules/analyze-images/3-analyze-image?pivots=python)
       - VisualFeatures.TAGS
@@ -60,7 +62,7 @@
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Speech Service</span>
    - Speech Recognition
       - `Speech-to-Text API`
-   - Speech synthesis
+   - [Speech synthesis](https://learn.microsoft.com/en-us/training/modules/create-speech-enabled-apps/1-introduction)
      - `Text-to-Speech API`
    - Speech Translation
       - `Speech Translation API`
