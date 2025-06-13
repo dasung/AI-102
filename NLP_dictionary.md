@@ -16,6 +16,38 @@
          Azure AI Language includes a question answering capability that enables you to create a knowledge base of question and answer pairs that can be queried using natural language input.
          Create a question answering project in Azure AI Language Studio.
          ```
+```mermaid
+flowchart TD
+   subgraph Horizontal1[Create&nbsp;a&nbsp;Language&nbsp;Service&nbsp;resource]
+      direction LR
+      R[Azure AI Language service]:::box
+      X[enable the Question Answering feature]:::box 
+      Y[Add Storage account]:::box
+      Z[add Storage Blob Data Contributor]:::box
+      
+      R --> X --> Y --> Z
+   end
+   subgraph Horizontal2[Create&nbsp;Custom&nbsp;Question&nbsp;Answering&nbsp;Project]
+      direction LR
+      C[Enter basic information]:::box
+      D[Add sources - url to the knowledge base]:::box
+      E[Edit the knowledge base]:::box
+      G[Train and test the knowledge base]:::box
+      H[Deploy the knowledge base]:::box
+      C --> D --> E --> G --> H
+   end
+   a[Azure Portal]:::box --> Horizontal1
+   Horizontal1 --> A
+   A[Language Studio portal]:::box
+   A --> Horizontal2 --> F[Client's code: QuestionAnsweringClient]:::box
+   F --> K[Test app with get_answers]:::box
+
+     %% Styling
+    classDef box fill:#ECECFF,color:black
+    classDef green-step fill:#107C10,color:white,stroke:#107C10
+    style Horizontal1 fill:#FFF4BD,color:black,stroke:#FFD700,stroke-width:1px
+    style Horizontal2 fill:#FFF4BD,color:black,stroke:#FFD700,stroke-width:1px
+```
 ### 4.3] Build a Conversational Language Understanding Model
 ### Pre-configured features of Azure AI Language service :  features without any model labeling or training
    * Language detection
@@ -56,23 +88,24 @@
 
 ```mermaid
 flowchart TD
-   subgraph Horizontal1[Setup AI Service]
+   subgraph Horizontal1[Create&nbsp;a&nbsp;Language&nbsp;Service&nbsp;resource]
       direction LR
       X[Azure AI Language service]:::box --> Y[Add Storage account]:::box
       Y --> Z[add Storage Blob Data Contributor]:::box
    end
    subgraph Horizontal2[Custom NER project]
       direction LR
+      M[Upload sample ads]:::box
       C[Label your data]:::box
       D[Add entity]:::box
       E[Train your model]:::box
       G[Evalate your model]:::box
       H[Deploy your model]:::box
-      C --> D --> E --> G --> H
+      M --> C --> D --> E --> G --> H
    end
    a[Azure Portal]:::box --> Horizontal1
    Horizontal1 --> A
-   A[Upload sample ads]:::box
+   A[Language Studio portal]:::box
    A --> Horizontal2 --> F[Client's code: TextAnalyticsClient ]:::box
    F --> K[Test app for custom entitties]:::box
 
@@ -88,6 +121,15 @@ flowchart TD
 
 ### 4.7] Create speech-enabled apps with Azure AI services
 
+### Azure Speech Recognition [Speech-to-text API](https://learn.microsoft.com/en-us/training/modules/create-speech-enabled-apps/3-speech-to-text)
+![speech-to-text](./images/speech-to-text.png)
+
+### Azure Speech Synthesis [text-to-speech API](https://learn.microsoft.com/en-us/training/modules/create-speech-enabled-apps/4-text-to-speech)
+![text-to-speech](./images/text-to-speech.png)
+
 ### 4.8] Translate speech with the Azure AI Speech service
+
+### [Speech translation](https://learn.microsoft.com/en-us/training/modules/translate-speech-speech-service/3-translate-speech-text) using the Azure AI Speech SDK
+![translate-speech-small](./images/translate-speech-small.png)
 
 ### 4.9] Develop an audio-enabled generative AI application
