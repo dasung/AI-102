@@ -84,3 +84,23 @@ To ensure AI's impacts are positive on people's lives, Microsoft uses the follow
 ----
 ## Describe business problems that you would use [composed models](https://learn.microsoft.com/en-us/training/modules/create-composed-form-recognizer-model/1-introduction) to solve.
 - You work for a company that conducts polls for private companies and political parties. Participants submit their responses as paper forms or as online PDFs. For each poll you conduct, respondents may complete up to three different form types but you want to analyze them with a single service. You want to create an AI service that can recognize these three form types and apply a different analysis to each. The three form types each have a different set of fields that you want to extract.
+
+---
+
+## What is orchestration workflow?
+- [Orchestration workflow](https://learn.microsoft.com/en-us/azure/ai-services/language-service/orchestration-workflow/overview) is Cloud Based Service offered by Azure AI Language Studio.
+- It uses machine-learning intelligence to enable you to build orchestration models to connect Conversational Language Understanding (CLU), Question Answering projects and LUIS applications. 
+- By creating an orchestration workflow, developers can iteratively tag utterances, train and evaluate model performance before making it available for consumption.
+
+### Steps of Creating an Orchestration Workflow Project
+
+   ![Orchestration-Workflow-lifecycle](./images/Orchestration-Workflow-lifecycle.png)
+
+---
+
+## How to run Azure AI Custom Vision in Edge Device?
+
+ - You are building an app that will be deployed to an edge device and will use Azure AI Custom Vision to analyze images.
+ - In Custom Vision portal, nn the Project Settings page, you can choose a [model domain](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/select-domain). 
+ - **Only Compact domain is optimized for the constraints of real-time classification on edge devices.**
+ - Then embed your [exported classifier into an application and run it locally on a device](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/export-your-model) via ONNX for real-time classification.

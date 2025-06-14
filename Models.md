@@ -51,3 +51,10 @@
 ## Embedding models
 ### Ada
 ### Cohere
+
+## Azure Built-In models
+### Face Service
+#### [detection_01](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/specify-detection-model)
+#### detection_02
+#### [recognition_01](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/specify-recognition-model) 
+#### recognition_02
