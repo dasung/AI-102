@@ -46,7 +46,7 @@
 
 ## Document Intelligence file [input requirements](https://learn.microsoft.com/en-us/training/modules/work-form-recognizer/3-get-started)
 
-- Format must be JPG, PNG, BMP, PDF (text or scanned), or TIFF. Read Support MS Word docs additionally
+- Format must be JPG, PNG, BMP, PDF (text or scanned), or TIFF. Also, Read Support [Microsoft Word] and [Microsoft Excel] docs additionally
 
 - The file size must be less than 500 MB for paid (S0) tier and 4 MB for free (F0) tier.
 - Image dimensions must be between 50 x 50 pixels and 10,000 x 10,000 pixels.
