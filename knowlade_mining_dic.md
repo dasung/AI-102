@@ -161,3 +161,13 @@ Example custom skill - [tabulates the frequency of individual words in a documen
   "vectorSearch":(optional){ }
 }
 ```
+
+## How to [Shape-up search results](https://learn.microsoft.com/en-us/azure/search/search-pagination-page-layout)
+
+ - The shape of a response is determined by parameters in the query itself.
+   - count - No of matches in index
+   - "skip": 15 -  skipping the first 15
+   - "top": 15 - returns the first set of 15 matching documents
+   - "orderby": "id asc" - sort by document ID (must have sortable atribte)
+   - "filter": "id ge 50" - (must have filterable atribte)
+   - $filter=author eq 'selected-facet-value-here'

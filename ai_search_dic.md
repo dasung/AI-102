@@ -1,5 +1,8 @@
 ## Indexing
 
+
+![cognitive-search-enrichment-architecture.png](./images/cognitive-search-enrichment-architecture.png)
+
 ## [Indexing Process](https://learn.microsoft.com/en-us/azure/search/search-indexer-overview)
 
 ![indexer-stages.png](./images/indexer-stages.png)
@@ -25,4 +28,15 @@
 - Microsoft.Skills.Custom.WebApiSkill - Inject using HTTP call into a [custom Web API](https://learn.microsoft.com/en-us/training/modules/create-azure-ai-custom-skill/4-custom-text-classification-skill)
 - Microsoft.Skills.Custom.AmlSkill - Inject an an [Azure Machine Learning model](https://learn.microsoft.com/en-us/training/modules/create-azure-ai-custom-skill/5-ml-custom-skill)
 
+---
+
+## What is a [Knowladge Store?](https://learn.microsoft.com/en-us/azure/search/knowledge-store-concept-intro?tabs=portal)
+
+![knowledge-store-concept-intro.png](./images/knowledge-store-concept-intro.png)
+
+- Other than Index, the Knowladge Store is the Secondary output of Indexing Process.
+- A knowledge store is used for downstream processing like knowledge mining.
+    - Azure Data Factory
+    - Microsoft Power BI
+    - To save extracted images
 
