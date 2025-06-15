@@ -110,3 +110,54 @@ Example custom skill - [tabulates the frequency of individual words in a documen
 ### Describe vector search
 ### Describe embeddings
 ### Run vector search queries using the REST API
+
+
+---
+
+# Question Summary
+
+## A Search Index
+
+- In Azure AI Search, index is your searchable content (document). Conceptually, a document is a single unit of searchable data in your index.
+- Suppose if search engine looks up "indexes" in a database...
+  - a search index equates to a table, and documents are roughly equivalent to rows in a table.
+
+- The "fields" collection is typically the largest part of an index
+  -  each field is named, assigned a data type, and attributed with allowable behaviors
+  - structure of a document is determined by the index schema JSON
+```
+{
+  "name": "name_of_index, unique across the service",
+  "description" : "Health plan coverage for standard and premium plans for Northwind and Contoso employees."
+  "fields": [
+    {
+      "name": "name_of_field",
+      "type": "Edm.String | Collection(Edm.String) | Collection(Edm.Single) | Edm.Int32 | Edm.Int64 | Edm.Double | Edm.Boolean | Edm.DateTimeOffset | Edm.GeographyPoint",
+      "searchable": true (default where applicable) | false (only Edm.String and Collection(Edm.String) fields can be searchable),
+      "filterable": true (default) | false,
+      "sortable": true (default where applicable) | false (Collection(Edm.String) fields cannot be sortable),
+      "facetable": true (default where applicable) | false (Edm.GeographyPoint fields cannot be facetable),
+      "key": true | false (default, only Edm.String fields can be keys),
+      "retrievable": true (default) | false,
+      "analyzer": "name_of_analyzer_for_search_and_indexing", (only if 'searchAnalyzer' and 'indexAnalyzer' are not set)
+      "searchAnalyzer": "name_of_search_analyzer", (only if 'indexAnalyzer' is set and 'analyzer' is not set)
+      "indexAnalyzer": "name_of_indexing_analyzer", (only if 'searchAnalyzer' is set and 'analyzer' is not set)
+      "normalizer":  "name_of_normalizer", (applies to fields that are filterable)
+      "synonymMaps": "name_of_synonym_map", (optional, only one synonym map per field is currently supported)
+      "dimensions": "number of dimensions used by an embedding models", (applies to vector fields only, of type Collection(Edm.Single))
+      "vectorSearchProfile": "name_of_vector_profile" (indexes can have many configurations, a field can use just one)
+    }
+  ],
+  "suggesters": [ ],
+  "scoringProfiles": [ ],
+  "analyzers":(optional)[ ... ],
+  "charFilters":(optional)[ ... ],
+  "tokenizers":(optional)[ ... ],
+  "tokenFilters":(optional)[ ... ],
+  "defaultScoringProfile": (optional) "...",
+  "corsOptions": (optional) { },
+  "encryptionKey":(optional){ },
+  "semantic":(optional){ },
+  "vectorSearch":(optional){ }
+}
+```
