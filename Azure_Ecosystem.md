@@ -58,7 +58,8 @@
 
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Video Indexer service</span>
    - [Video Indexer portal](https://learn.microsoft.com/en-us/training/modules/analyze-video/2-understand-video-indexer-capabilities)
-   
+      - Insights
+      - TimeLine
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Speech Service</span>
    - Speech Recognition
       - `Speech-to-Text API`

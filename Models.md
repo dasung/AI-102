@@ -53,8 +53,12 @@
 ### Cohere
 
 ## Azure Built-In models
-### Face Service
+### Face Service models
 #### [detection_01](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/specify-detection-model)
 #### detection_02
 #### [recognition_01](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/how-to/specify-recognition-model) 
 #### recognition_02
+### [Vedio Indexer models](https://learn.microsoft.com/en-us/training/modules/analyze-video/3-extract-custom-insights)
+#### People
+#### Language
+#### Brands

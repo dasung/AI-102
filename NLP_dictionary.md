@@ -74,10 +74,15 @@ flowchart TD
    ```
    * When labeling multiple label projects, you can assign as many classes that you want per file
    ![single-multiple-graphic-small](./images/single-multiple-graphic-small.png)
-   * Evaluating and improving your model
+
+#### Azure AI Languge [Evaluation metrics](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/concepts/evaluation-metrics?azure-portal=true)
+   * Model evaluation is triggered automatically after training  custom text classification.
       * Recall - How many true-positives lables were identified
+      `Recall = #True_Positive / (#True_Positive + #False_Negatives)`
       * Precision - How many of the predicted labels are correct
-      * F1 Score - A function of recall and precision,
+      `Precision = #True_Positive / (#True_Positive + #False_Positive)`
+      * F1 Score - A function of recall and precision, seek seek a balance between precision and recall.
+      `F1 Score = 2 * Precision * Recall / (Precision + Recall)`
 ### 4.5] Custom named entity recognition
 
    - [Why custom NER?](https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Exercises/05-extract-custom-entities.html) 
