@@ -1,12 +1,41 @@
-# What is an AI Agent?
-    AI agents are smart software services that combine generative AI models with contextual data and the ability to automate tasks based on user input and environmental factors that they perceive.
+## What is an AI Agent?
 
-# Components of an agent
-## Model
-## Knowledge
-## Tools
+   - Smart SW Services that combine Gen AI models with user's contextual data.
+   - Ability to automate tasks based on user input and environmental factors.
 
-# List of Agent Development Framework
+
+## Components of an agent
+   - Model
+   - Knowledge   
+   - Tools
+
+## Agent Development [Framework](https://learn.microsoft.com/en-us/training/modules/ai-agent-fundamentals/3-agent-development)
+
+```mermaid
+flowchart LR
+    A[Check Business Usecase] 
+    B{"Check<br>agent's<br>type?"}
+    C[AI Foundry Agent Service]
+    D[Semantic Kernel]
+    E[OpenAI Assistants API]
+    F[AutoGen]
+    G[Microsoft 365 Agents SDK]
+    H[Microsoft Copilot Studio]
+
+    A ==> B 
+    B ==> |single agent|C -.-> |when open AI model only|E
+    B ==> |multi agent - lightweight|D
+    B --> |multi agent - RnD|F
+    B -.-> |microsoft 365 agent|G
+    B -.-> |code-dev agent|H
+
+   %% invisible node
+   G -.->|↳| I["💡 like Slack or Messenger"]
+    style I stroke-width:0,fill:none
+```
+
+
+
 ## Azure AI Foundry Agent Service
    * Azure define framework to create & manage AI Agents
    * Use [Azure AI Foundry resource](https://learn.microsoft.com/en-us/azure/ai-services/agents/)
