@@ -33,7 +33,7 @@
 
 ### Data Secure with Containers?
 - When using Azure AI services containers, the model is downloaded to the container image.
-  - Eg: Azure container image for Sentiment Analysis
+  - Eg: Azure [container image for Sentiment Analysis](https://learn.microsoft.com/en-us/training/modules/investigate-container-for-use-with-ai-services/3-use-ai-services-container)
   - mcr.microsoft.com/azure-cognitive-services/textanalytics/sentiment
 -  The model locally on Docker host while keeping the data processing within your environment. 
 -  Container must periodically connect to Azure to send usage metrics for billing

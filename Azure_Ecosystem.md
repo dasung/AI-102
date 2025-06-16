@@ -84,6 +84,7 @@
      - W-2 tax model
    - [Custom models](https://learn.microsoft.com/en-us/training/modules/plan-form-recognizer-solution/2-understand)
      - Custom template models
+        - [Sample Labeling tool](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/label-tool?view=doc-intel-2.1.0)
      - [Custom neural models](https://learn.microsoft.com/en-us/training/modules/work-form-recognizer/6-train-custom-models)
    - [Composed models](https://learn.microsoft.com/en-us/training/modules/plan-form-recognizer-solution/4-choose-model-type)
      - multiple custom models
