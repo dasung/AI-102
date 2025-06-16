@@ -198,8 +198,13 @@
 ### Storage Account Resource
    - data indexing for [Azure AI Search Service](https://microsoftlearning.github.io/mslearn-knowledge-mining/Instructions/Exercises/01-azure-search.html)
    - [knowledgeStore object](https://learn.microsoft.com/en-us/training/modules/create-knowledge-store-azure-cognitive-search/3-define-knowledge-store)
-### `ACI` Container Instances Resource
-#### Overview
+### Container Instances Resource
+#### Cloud
+- An Azure Container Instance (ACI).
+- An Azure Kubernetes Service (AKS) cluster.
+#### On-Premises
+- A Docker* server.
+#### [Overview](https://microsoftlearning.github.io/mslearn-ai-services/Instructions/Exercises/04-use-a-container.html)
    - Status
    - IP Address
    - FQDN

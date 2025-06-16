@@ -101,6 +101,9 @@ To ensure AI's impacts are positive on people's lives, Microsoft uses the follow
 ## How to run Azure AI Custom Vision in Edge Device?
 
  - You are building an app that will be deployed to an edge device and will use Azure AI Custom Vision to analyze images.
- - In Custom Vision portal, nn the Project Settings page, you can choose a [model domain](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/select-domain). 
- - **Only Compact domain is optimized for the constraints of real-time classification on edge devices.**
- - Then embed your [exported classifier into an application and run it locally on a device](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/export-your-model) via ONNX for real-time classification.
+ - In Custom Vision portal, the Project Settings page, you can choose a [model domain](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/select-domain). 
+   - **Only Compact domain is optimized for the constraints of real-time classification on edge devices.**
+ - Then your [model can be exported]((https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/export-your-model)) one of the following options which enables to run it on mobile devices.
+   - TensorFlow for Android
+   - ONNX for Windows ML, Android, and iOS
+   - A Docker container for Windows, Linux, or ARM

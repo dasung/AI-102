@@ -52,5 +52,17 @@ flowchart TD
 ```
 ---
 
+# Run Language Model in Mobile App
+
+### Use Case:
+
+   - You are building an Azure AI Language solution.
+     - You need to deploy the solution to a location without internet connectivity.
+     - What should you do?
+
+### Design: <TODO>
+   - Use model in [Docker Image container](https://learn.microsoft.com/en-us/azure/ai-services/containers/disconnected-containers)
+   - Consider [Billing & Data Security](https://learn.microsoft.com/en-us/training/modules/investigate-container-for-use-with-ai-services/3-use-ai-services-container)
+   - Find difference between [Export Model](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/export-your-model) vs [Deploy to Containers](https://learn.microsoft.com/en-us/training/modules/investigate-container-for-use-with-ai-services/3-use-ai-services-container)
 
 
