@@ -1,7 +1,53 @@
+## Azure AI Content Understanding 
+- Azure AI Content Understanding is use to extract insights and data from multiple kinds of content. 
+- This is NOT NLP's CLU - Conversational Language Understanding
+
+![content-understanding.png](./images/content-understanding.png)
+
+- [TODO] Develop a [Content Understanding](https://microsoftlearning.github.io/mslearn-ai-information-extraction/Instructions/Labs/01-content-understanding.html) backend and [client application](https://learn.microsoft.com/en-us/training/modules/analyze-content-ai-api/05-exercise)
+
+---
+
+## Create Azure AI Search Service
+### Replicas and partitions
+- These are helpful to optimize your solution on scalability and availability
+
+- Replicas : nodes in a cluster
+  - Increasing the number of replicas can handle multiple concurrent query requests while managing ongoing indexing operations.
+  - Partitions are used to divide an index into multiple storage locations, enabling you to split I/O operations such as querying or rebuilding an index.
+### Search Service Components
+- Data source
+- Skillset (Enrich data with AI)
+- Indexer (Engine does indexing)
+- Index (searchble unit) : It has following "Feild" attributes
+  - key: unique key for index records.
+  - searchable: if index can be queried using full-text search.
+  - filterable: if index can be included in filter expressions to filter results.
+  - sortable: if index can be used to order the results.
+  - facetable: to determine values for facets 
+  - retrievable: to included in search results 
+
+### Search an index
+- After you have created and populated an index, you can query it to search for information in the indexed document content.
+
+#### Search Query Processing Stages:
+- Query parsing - evaluated and reconstructed as a tree of appropriate subqueries. 
+- Lexical analysis - The query terms are analyzed and refined based on linguistic rules. 
+- Document retrieval - Matched against the indexed terms, and matching documents are identified.
+- Scoring - A relevance score is assigned 
+- [Apply filtering and sorting](https://learn.microsoft.com/en-us/training/modules/create-azure-cognitive-search-solution/6-apply-filtering-sorting): $filter, $orderby 
+
+#### Custom scoring and result boosting
+- Define a scoring profile, you can specify its use in an individual search, or you can modify an index definition so that it uses your custom scoring profile by default.
+
+#### Synonyms
+- To be accurate, the UK and Great Britain are different entities - but they're commonly confused with one another; so it's reasonable to assume that someone searching for "United Kingdom" might be interested in results that reference "Great Britain".
+---
 ## Indexing
 
-
 ![cognitive-search-enrichment-architecture.png](./images/cognitive-search-enrichment-architecture.png)
+
+- The indexing process works by creating a document for each indexed entity. During indexing, an [enrichment pipeline](https://learn.microsoft.com/en-us/training/modules/create-azure-cognitive-search-solution/4-indexing-process) iteratively builds the documents that combine metadata from the data source with enriched fields extracted by cognitive skills. 
 
 ## [Indexing Process](https://learn.microsoft.com/en-us/azure/search/search-indexer-overview)
 
@@ -48,7 +94,28 @@
     - Table projections : To store Tablur formatted output
 
 
-
-
 [TODO] - Create knowladge mining solusion: https://learn.microsoft.com/en-us/training/modules/create-knowledge-store-azure-cognitive-search/4-exercise-knowledge-store
+
+---
+## Advanced Search Features in Azure AI Search
+
+![score-phase-small](./images/score-phase-small.png)
+
+### Term Boosting
+### Improve the relevance of results by adding scoring profiles
+### Analyzers in AI Search
+- Language analyzers
+- Specialized analyzers
+- [custom analyzer](https://learn.microsoft.com/en-us/training/modules/implement-advanced-search-features-azure-cognitive-search/04-improve-index-analyzers-tokenized-terms)
+  - Character filters
+  - Tokenizers
+  - Token filters
+---
+## Summary
+
+- A data source where the data to be indexed is stored (though you can also push data directly into an index by using the API).
+- A skillset that defines and enrichment pipeline of cognitive skills to enrich the index data.
+- An index that defines fields, which the user can query.
+- An indexer that populates the fields in the index with values extracted from the source data.
+
 
