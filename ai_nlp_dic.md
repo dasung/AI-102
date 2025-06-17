@@ -343,20 +343,30 @@ flowchart TD
    - To improve your model, you'll want to find more high quality and varied summaries for both "Action and Strategy" games, as well as "Strategy" games to teach your model how to differentiate the two.
 
 ---
-### 4.5] Custom named entity recognition
+## Custom Named Entity Recognition App
 
    - [Why custom NER?](https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Exercises/05-extract-custom-entities.html) 
      -  When the entities you want to extract are not included in the built-in services
      - Knowladge Miniing and improve search results
    - Defined your custom entity clearly
+### Use Case:
+-  Looks at bank statements documents, identifies, and extracts user defined entities such as,
+   - Person names and addresses 
+   - Branch
+
+### Design: 
+
+![extraction-development-lifecycle.png](./images/extraction-development-lifecycle.png)
 
 
 ```mermaid
 flowchart TD
    subgraph Horizontal1[Create&nbsp;a&nbsp;Language&nbsp;Service&nbsp;resource]
       direction LR
-      X[Azure AI Language service]:::box --> Y[Add Storage account]:::box
+      X[Azure AI Language service]:::box --> N[enable  Custom named entity recognition extraction feature]:::box
+      N --> Y[Add Storage account]:::box
       Y --> Z[add Storage Blob Data Contributor]:::box
+      
    end
    subgraph Horizontal2[Custom NER project]
       direction LR
@@ -372,7 +382,7 @@ flowchart TD
    Horizontal1 --> A
    A[Language Studio portal]:::box
    A --> Horizontal2 --> F[Client's code: TextAnalyticsClient ]:::box
-   F --> K[Test app for custom entitties]:::box
+   F --> K[Test app with ai_client.begin_recognize_custom_entities]:::box
 
      %% Styling
     classDef box fill:#ECECFF,color:black
@@ -381,30 +391,116 @@ flowchart TD
     style Horizontal2 fill:#FFF4BD,color:black,stroke:#FFD700,stroke-width:1px
 ```
 
+---
 
-### 4.6] Translate text with Azure AI Translator service
+## Translate text with Azure AI Translator service
 
-### 4.7] Create speech-enabled apps with Azure AI services
+### [Azure AI Translator Capabilities](https://learn.microsoft.com/en-us/training/modules/translate-text-with-translator-service/3-understand-language-detection-translation-transliteration)
 
-### Azure Speech Recognition [Speech-to-text API](https://learn.microsoft.com/en-us/training/modules/create-speech-enabled-apps/3-speech-to-text)
+```mermaid
+flowchart LR
+   A[AI Translator]:::box
+
+   X0[Translation]:::box
+   Y0["Good afternoon"]:::my
+       
+   X1[Transliteration]:::box
+   Z0["Kon'nichiwa"]:::my
+   
+   X3["<a href='https://learn.microsoft.com/en-us/training/modules/translate-text-with-translator-service/4-specify-translation-options'>Translation options</a>"]:::green-step
+   O1[Word alignment]:::green-step
+   O2[Sentence length]:::green-step
+   O3[Profanity filtering]:::green-step
+
+   A ==> K[Language detection]:::box  -.-> W["Text : こんにちは / ja"]:::my
+   %% Built-In Tools
+   A ==> X0 -.-> Y0 
+
+   %% Custom Tools
+   A ==> X1 
+   X1 -.-> Z0
+
+   %% other
+   A ==> X3
+   X3 --> |includeAlignment param|O1 -.-> B["💡 spaces used to seperate words?"]:::my
+   X3 --> |includeSentenceLength param|O2 -.-> C["💡 how best to ssplay translated output?"]:::my
+   X3 --> |profanityAction param|O3 -.-> D["💡 omit some translated parts"]:::my
+
+
+
+   %% invisible node
+    classDef my stroke-width:0,fill:none
+    classDef box fill:#ECECFF,color:black
+    classDef green-step fill:#9bf4b2,color:black,stroke:#9bf4b2
+```
+
+## Text Translate App
+### Use Case:
+- Translates input in any supported language to the target language of your choice. 
+
+### Design: 
+- Use Azure [AI Translator](https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Exercises/06-translate-text.html) translate text between languages..
+
+```mermaid
+flowchart TD
+   subgraph Horizontal1[Create&nbsp;a&nbsp;Language&nbsp;Service&nbsp;resource]
+      direction LR
+      X0[Create Azure AI Translator resource]:::box
+      X1[Get Keys and Endpoint]:::box 
+      
+      X0 --> X1
+   end
+
+   subgraph Horizontal2[Client&nbsp;Translation&nbsp;App]
+      direction LR
+      Y0[ai_client.get_languages]:::box
+      Y1[ai_client.translate]:::box
+      Y0 --> Y1 
+   end
+
+   %% main tree-view
+   A[Azure Portal]:::box
+   B[Choose target language]:::box
+   C[Client's code: TextTranslationClient]:::box
+
+   A --> Horizontal1 --> B --> C --> Horizontal2
+
+   %% Styling
+   classDef box fill:#ECECFF,color:black
+   classDef green-step fill:#107C10,color:white,stroke:#107C10
+   style Horizontal1 fill:#FFF4BD,color:black,stroke:#FFD700,stroke-width:1px
+   style Horizontal2 fill:#FFF4BD,color:black,stroke:#FFD700,stroke-width:1px
+```
+
+## Create speech-enabled apps with Azure AI services
+
+### [Azure AI Speech Service](https://learn.microsoft.com/en-us/training/modules/create-speech-enabled-apps/1-introduction)
+   - Speech to text : speech recognition
+   - Text to speech: speech synthesis
+   - Speech Translation: translate spoken input
+   - Keyword Recognition: to recognize keywords or short phrases
+   - Intent Recognition: CLU to determine the semantic meaning of spoken input
+### [1] Azure Speech Recognition [Speech-to-text API](https://learn.microsoft.com/en-us/training/modules/create-speech-enabled-apps/3-speech-to-text)
+   - Real-time transcription: Instant transcription for live audio inputs.
 ![speech-to-text](./images/speech-to-text.png)
 
-### Azure Speech Synthesis [text-to-speech API](https://learn.microsoft.com/en-us/training/modules/create-speech-enabled-apps/4-text-to-speech)
+### [2] Azure Speech Synthesis [text-to-speech API](https://learn.microsoft.com/en-us/training/modules/create-speech-enabled-apps/4-text-to-speech)
+   - convert large volumes of text to audio - generate an audio-book from the source text.
 ![text-to-speech](./images/text-to-speech.png)
 
-### 4.8] Translate speech with the Azure AI Speech service
+[TODO]: [Recognize and synthesize speech app](https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Exercises/07-speech.html)
 
-#### Specify translation options
-- Word alignment
-- Sentence length
-- Profanity filtering
-[TODO] https://learn.microsoft.com/en-us/training/modules/translate-text-with-translator-service/6-exercise-translate-text
+### [3] [Translate speech to text](https://learn.microsoft.com/en-us/training/modules/translate-speech-speech-service/3-translate-speech-text) using the Azure AI Speech SDK
 
-### [Speech translation](https://learn.microsoft.com/en-us/training/modules/translate-speech-speech-service/3-translate-speech-text) using the Azure AI Speech SDK
+- develop a translator application that people can use when traveling in places where they don’t speak the local language. They would be able to say phrases such as “Where is the station?” or “I need to find a pharmacy” in their own language, and have it translate them to the local language.
 ![translate-speech-small](./images/translate-speech-small.png)
 
 [TODO] Speech Translation APP: https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Exercises/08-translate-speech.html
 
-### 4.9] Develop an audio-enabled generative AI application
+### [4] Develop an audio-enabled generative AI application
+#### Use Case:
+- Develop a client app that engages in audio-based chats with a multimodal model 
+- The key difference is that prompts for an audio-based chat include multi-part user messages that contain both a text content item and an audio content item.
 
-[TODO]
+### Design: 
+[TODO](https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Labs/09-audio-chat.html) In this exercise, you used Azure AI Foundry and the Azure AI Inference SDK to create a client application uses a multimodal model to generate responses to audio.
