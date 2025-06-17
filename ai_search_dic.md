@@ -28,6 +28,8 @@
 - Microsoft.Skills.Custom.WebApiSkill - Inject using HTTP call into a [custom Web API](https://learn.microsoft.com/en-us/training/modules/create-azure-ai-custom-skill/4-custom-text-classification-skill)
 - Microsoft.Skills.Custom.AmlSkill - Inject an an [Azure Machine Learning model](https://learn.microsoft.com/en-us/training/modules/create-azure-ai-custom-skill/5-ml-custom-skill)
 
+
+[TODO]: Implement custom skills
 ---
 
 ## What is a [Knowladge Store?](https://learn.microsoft.com/en-us/azure/search/knowledge-store-concept-intro?tabs=portal)
@@ -39,4 +41,14 @@
     - Azure Data Factory
     - Microsoft Power BI
     - To save extracted images
+- This Downstreaming is done by Projections
+- Type of Projections
+    - Object projections : To store JSON formatted output
+    - File projections : To store Tablur image output
+    - Table projections : To store Tablur formatted output
+
+
+
+
+[TODO] - Create knowladge mining solusion: https://learn.microsoft.com/en-us/training/modules/create-knowledge-store-azure-cognitive-search/4-exercise-knowledge-store
 

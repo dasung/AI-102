@@ -68,7 +68,7 @@
 To ensure AI's impacts are positive on people's lives, Microsoft uses the following principles when it designs and builds AI solutions.
 
 - Fairness:
-  - All AI systems should treat people fairly, regardless of race, belief, gender, sexuality, or other factors.
+  - AI system should treat people fairly, regardless of race, belief, gender, sexuality, or other factors like location.
 - Reliability and safety:
   - All AI systems should give reliable answers with quantifiable confidence levels.
 - Privacy and security:
@@ -87,15 +87,31 @@ To ensure AI's impacts are positive on people's lives, Microsoft uses the follow
 
 ---
 
-## What is orchestration workflow?
-- [Orchestration workflow](https://learn.microsoft.com/en-us/azure/ai-services/language-service/orchestration-workflow/overview) is Cloud Based Service offered by Azure AI Language Studio.
-- It uses machine-learning intelligence to enable you to build orchestration models to connect Conversational Language Understanding (CLU), Question Answering projects and LUIS applications. 
-- By creating an orchestration workflow, developers can iteratively tag utterances, train and evaluate model performance before making it available for consumption.
+## What is **Orchestration Workflow** ?
+- [Orchestration workflow](https://learn.microsoft.com/en-us/azure/ai-services/language-service/orchestration-workflow/overview) is a Cloud Based Service offered by Azure AI Language Studio.
+- An orchestration model is built using  machine-learning intelligence and it connects various skills such as,
+   -  Question Answering Projects
+   - Conversational Language Understanding (CLU)
+   - LUIS applications
+- This orchestration modelshould be trained.
+- Ultimate Goal is to "Predict intents" from user's utterances. 
+
 
 ### Steps of Creating an Orchestration Workflow Project
 
+- By creating an orchestration workflow, developers can iteratively tag utterances, train and evaluate model performance before making it available for consumption.
    ![Orchestration-Workflow-lifecycle](./images/Orchestration-Workflow-lifecycle.png)
 
+### Use Case:
+  - LSEG chat bot might handle a variety of employee affairs.
+    - FAQ skill
+    - Custom QnA from knowladge base skill
+    - Calander Specific skill using CLU
+    - Interview feedback skill
+  - orchestration workflow is created
+    - Now orchestration workflow conncts above skills to one project
+  - Customer sends requests
+  - <span style="color: green;font-weight: bold;">Now chat bot can re-routing of incoming requests to appropriate skill</span>
 ---
 
 ## How to run Azure AI Custom Vision in Edge Device?

@@ -9,6 +9,7 @@
 
 - Use the `analyze document` function to starts the form analysis, then request the result to get the analysis.
 
+[TODO] Doc Interlience app : https://microsoftlearning.github.io/mslearn-ai-document-intelligence/Instructions/Exercises/02-custom-document-intelligence.html
 ## Confidence scores
 - If the confidence values of the analyzeResult are low, try to improve the quality of your input documents.
 - confidence score of 80% or higher is acceptable for a low-risk application.

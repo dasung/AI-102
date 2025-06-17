@@ -2,6 +2,7 @@
 
    - Smart SW Services that combine Gen AI models with user's contextual data.
    - Ability to automate tasks based on user input and environmental factors.
+   - handling complex workflows without requiring continuous human oversight.
 
 ## Agent Architecture
 

@@ -134,7 +134,17 @@ flowchart TD
 
 ### 4.8] Translate speech with the Azure AI Speech service
 
+#### Specify translation options
+- Word alignment
+- Sentence length
+- Profanity filtering
+[TODO] https://learn.microsoft.com/en-us/training/modules/translate-text-with-translator-service/6-exercise-translate-text
+
 ### [Speech translation](https://learn.microsoft.com/en-us/training/modules/translate-speech-speech-service/3-translate-speech-text) using the Azure AI Speech SDK
 ![translate-speech-small](./images/translate-speech-small.png)
 
+[TODO] Speech Translation APP: https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Exercises/08-translate-speech.html
+
 ### 4.9] Develop an audio-enabled generative AI application
+
+[TODO]

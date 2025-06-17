@@ -3,6 +3,11 @@
   - Replicas are instances of the search service - you can think of them as nodes in a cluster. Increasing the number of replicas can help ensure there is sufficient capacity to service multiple concurrent query requests while managing ongoing indexing operations.
   - Partitions are used to divide an index into multiple storage locations, enabling you to split I/O operations such as querying or rebuilding an index.
 
+```
+- For throttling issues, Add more resources at search service.
+  - replicas (Query based throttling)
+  - partitions (Indexing based throttling)
+```
   #### Search components
      - Data source
      - Skillset (Enrich data with AI)

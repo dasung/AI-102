@@ -74,14 +74,19 @@
    - Transliteration (Kon'nichiwa)
 #### <span style="color: green;font-weight: bold; font-size: 16px;">Azure AI Document Intelligence Service</span>
    - [Form Processing](https://learn.microsoft.com/en-us/training/modules/read-text-images-documents-with-computer-vision-service/2-options-read-text)
+     -  Forms
+     - Invoices
+     - Receipts
    - [Document analysis models](https://learn.microsoft.com/en-us/training/modules/work-form-recognizer/9-form-recognizer-studio)   
      - Read model
      - Layout model
+     - General Documents
    - [prebuilt models](https://learn.microsoft.com/en-us/training/modules/plan-form-recognizer-solution/4-choose-model-type)
 
      - Invoice model
      - Receipt model
      - W-2 tax model
+     - Business card model
    - [Custom models](https://learn.microsoft.com/en-us/training/modules/plan-form-recognizer-solution/2-understand)
      - Custom template models
         - [Sample Labeling tool](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/label-tool?view=doc-intel-2.1.0)
